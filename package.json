@@ -54,7 +54,8 @@
     "title": "^3.4.4",
     "serve-static": "^1.14.1",
     "typographic-base": "^1.0.4",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "tailwindcss-filters": "^3.0.0"
   },
   "author": "nrajlich"
 }
