@@ -9,19 +9,7 @@
     "build": "shopify hydrogen build",
     "preview": "shopify hydrogen preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-      "dev": "shopify hydrogen dev",
-    "build": "shopify hydrogen build",
-    "preview": "shopify hydrogen preview",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
- "lint:js": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx src",
-    "lint:css": "stylelint ./src/**/*.{css,sass,scss}",
-    "build": "yarn build:client && yarn build:server && yarn build:worker",
-    "build:client": "vite build --outDir dist/client --manifest",
-    "build:server": "vite build --outDir dist/server --ssr @shopify/hydrogen/platforms/node",
-    "build:worker": "cross-env WORKER=true vite build --outDir dist/worker --ssr @shopify/hydrogen/platforms/worker",
-    "serve": "node --enable-source-maps dist/server",
-"test": "WATCH=true vitest",
-    "test:ci": "yarn build -t node && vitest run"
+    "lint-ts": "tsc --noEmit",
     "test": "WATCH=true vitest",
     "test:ci": "yarn build -t node && vitest run"
   },
@@ -50,16 +38,13 @@
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@shopify/hydrogen": "^1.0.2",
-    "@tailwindcss/aspect-ratio": "^0.4.0",
     "clsx": "^1.1.1",
     "graphql-tag": "^2.12.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-use": "^17.4.0",
     "title": "^3.4.4",
-    "typographic-base": "^1.0.4",
-    "tailwindcss-filters": "^3.0.0"
-
+    "typographic-base": "^1.0.4"
   },
   "author": "nrajlich"
 }
